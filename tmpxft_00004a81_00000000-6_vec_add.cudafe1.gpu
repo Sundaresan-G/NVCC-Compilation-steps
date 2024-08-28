@@ -1,0 +1,1097 @@
+typedef char __nv_bool;
+# 2797 "/usr/local/cuda-12.1/include/driver_types.h"
+struct CUstream_st;
+# 2802 "/usr/local/cuda-12.1/include/driver_types.h"
+struct CUevent_st;
+# 27 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/sysroot/usr/include/xlocale.h" 3
+struct __locale_struct;
+# 213 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/basic_string.h" 3
+enum _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEUt_E {
+# 213 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/basic_string.h" 3
+_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE17_S_local_capacityE = 15};
+# 213 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/basic_string.h" 3
+enum _ZNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEUt_E {
+# 213 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/basic_string.h" 3
+_ZNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEE17_S_local_capacityE = 3};
+# 213 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/basic_string.h" 3
+enum _ZNSt7__cxx1112basic_stringIDsSt11char_traitsIDsESaIDsEEUt_E {
+# 213 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/basic_string.h" 3
+_ZNSt7__cxx1112basic_stringIDsSt11char_traitsIDsESaIDsEE17_S_local_capacityE = 7};
+# 213 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/basic_string.h" 3
+enum _ZNSt7__cxx1112basic_stringIDiSt11char_traitsIDiESaIDiEEUt_E {
+# 213 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/basic_string.h" 3
+_ZNSt7__cxx1112basic_stringIDiSt11char_traitsIDiESaIDiEE17_S_local_capacityE = 3};
+# 73 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/cpp_type_traits.h" 3
+struct _ZSt11__true_type;
+# 74 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/cpp_type_traits.h" 3
+struct _ZSt12__false_type;
+# 230 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/cpp_type_traits.h" 3
+enum _ZNSt12__is_integerIlEUt_E {
+# 230 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/cpp_type_traits.h" 3
+_ZNSt12__is_integerIlE7__valueE = 1};
+# 300 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/cpp_type_traits.h" 3
+enum _ZNSt13__is_floatingIfEUt_E {
+# 300 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/cpp_type_traits.h" 3
+_ZNSt13__is_floatingIfE7__valueE = 1};
+# 129 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/cpp_type_traits.h" 3
+enum _ZNSt12__is_integerIfEUt_E {
+# 129 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/cpp_type_traits.h" 3
+_ZNSt12__is_integerIfE7__valueE};
+# 62 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/type_traits" 3
+struct _ZSt17integral_constantIbLb0EE;
+# 62 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/type_traits" 3
+struct _ZSt17integral_constantIbLb1EE;
+# 93 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/stl_iterator_base_types.h" 3
+struct _ZSt18input_iterator_tag;
+# 99 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/stl_iterator_base_types.h" 3
+struct _ZSt20forward_iterator_tag;
+# 103 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/stl_iterator_base_types.h" 3
+struct _ZSt26bidirectional_iterator_tag;
+# 107 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/stl_iterator_base_types.h" 3
+struct _ZSt26random_access_iterator_tag;
+# 335 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/char_traits.h" 3
+struct _ZSt11char_traitsIcE;
+# 168 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/stl_construct.h" 3
+struct _ZSt12_Destroy_auxILb1EE;
+# 373 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_classes.h" 3
+struct _ZNSt6locale5facetE;
+# 373 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_classes.h" 3
+struct __SO__NSt6locale5facetE;
+# 524 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_classes.h" 3
+struct _ZNSt6locale5_ImplE;
+# 62 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_classes.h" 3
+struct _ZSt6locale;
+# 57 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+enum _ZSt13_Ios_Fmtflags {
+# 59 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZSt12_S_boolalpha = 1,
+# 60 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZSt6_S_dec,
+# 61 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZSt8_S_fixed = 4,
+# 62 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZSt6_S_hex = 8,
+# 63 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZSt11_S_internal = 16,
+# 64 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZSt7_S_left = 32,
+# 65 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZSt6_S_oct = 64,
+# 66 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZSt8_S_right = 128,
+# 67 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZSt13_S_scientific = 256,
+# 68 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZSt11_S_showbase = 512,
+# 69 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZSt12_S_showpoint = 1024,
+# 70 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZSt10_S_showpos = 2048,
+# 71 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZSt9_S_skipws = 4096,
+# 72 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZSt10_S_unitbuf = 8192,
+# 73 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZSt12_S_uppercase = 16384,
+# 74 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZSt14_S_adjustfield = 176,
+# 75 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZSt12_S_basefield = 74,
+# 76 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZSt13_S_floatfield = 260,
+# 77 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZSt19_S_ios_fmtflags_end = 65536,
+# 78 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZSt19_S_ios_fmtflags_max = 2147483647,
+# 79 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZSt19_S_ios_fmtflags_min = (-2147483647-1)};
+# 111 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+enum _ZSt13_Ios_Openmode {
+# 113 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZSt6_S_app = 1,
+# 114 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZSt6_S_ate,
+# 115 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZSt6_S_bin = 4,
+# 116 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZSt5_S_in = 8,
+# 117 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZSt6_S_out = 16,
+# 118 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZSt8_S_trunc = 32,
+# 119 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZSt12_S_noreplace = 64,
+# 120 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZSt19_S_ios_openmode_end = 65536,
+# 121 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZSt19_S_ios_openmode_max = 2147483647,
+# 122 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZSt19_S_ios_openmode_min = (-2147483647-1)};
+# 154 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+enum _ZSt12_Ios_Iostate {
+# 156 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZSt10_S_goodbit,
+# 157 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZSt9_S_badbit,
+# 158 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZSt9_S_eofbit,
+# 159 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZSt10_S_failbit = 4,
+# 160 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZSt18_S_ios_iostate_end = 65536,
+# 161 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZSt18_S_ios_iostate_max = 2147483647,
+# 162 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZSt18_S_ios_iostate_min = (-2147483647-1)};
+# 194 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+enum _ZSt12_Ios_Seekdir {
+# 196 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZSt6_S_beg,
+# 197 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZSt6_S_cur,
+# 198 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZSt6_S_end,
+# 199 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZSt18_S_ios_seekdir_end = 65536};
+# 562 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+struct _ZNSt8ios_base14_Callback_listE;
+# 601 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+struct _ZNSt8ios_base6_WordsE;
+# 613 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+enum _ZNSt8ios_baseUt_E {
+# 613 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZNSt8ios_base18_S_local_word_sizeE = 8};
+# 635 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+struct _ZNSt8ios_base4InitE;
+# 229 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+struct _ZSt8ios_base;
+# 451 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/stl_algobase.h" 3
+struct _ZSt19istreambuf_iteratorIcSt11char_traitsIcEE;
+# 454 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/stl_algobase.h" 3
+struct _ZSt19ostreambuf_iteratorIcSt11char_traitsIcEE;
+# 80 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/iosfwd" 3
+struct _ZSt15basic_streambufIcSt11char_traitsIcEE;
+# 41 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/x86_64-conda-linux-gnu/bits/ctype_base.h" 3
+struct _ZSt10ctype_base;
+# 689 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_facets.h" 3
+struct _ZSt5ctypeIcE;
+# 1559 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_facets.h" 3
+enum _ZNSt10__num_baseUt_E {
+# 1560 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_facets.h" 3
+_ZNSt10__num_base9_S_ominusE,
+# 1561 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_facets.h" 3
+_ZNSt10__num_base8_S_oplusE,
+# 1562 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_facets.h" 3
+_ZNSt10__num_base5_S_oxE,
+# 1563 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_facets.h" 3
+_ZNSt10__num_base5_S_oXE,
+# 1564 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_facets.h" 3
+_ZNSt10__num_base10_S_odigitsE,
+# 1565 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_facets.h" 3
+_ZNSt10__num_base14_S_odigits_endE = 20,
+# 1566 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_facets.h" 3
+_ZNSt10__num_base11_S_oudigitsE = 20,
+# 1567 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_facets.h" 3
+_ZNSt10__num_base15_S_oudigits_endE = 36,
+# 1568 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_facets.h" 3
+_ZNSt10__num_base5_S_oeE = 18,
+# 1569 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_facets.h" 3
+_ZNSt10__num_base5_S_oEE = 34,
+# 1570 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_facets.h" 3
+_ZNSt10__num_base7_S_oendE = 36};
+# 1585 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_facets.h" 3
+enum _ZNSt10__num_baseUt0_E {
+# 1586 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_facets.h" 3
+_ZNSt10__num_base9_S_iminusE,
+# 1587 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_facets.h" 3
+_ZNSt10__num_base8_S_iplusE,
+# 1588 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_facets.h" 3
+_ZNSt10__num_base5_S_ixE,
+# 1589 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_facets.h" 3
+_ZNSt10__num_base5_S_iXE,
+# 1590 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_facets.h" 3
+_ZNSt10__num_base8_S_izeroE,
+# 1591 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_facets.h" 3
+_ZNSt10__num_base5_S_ieE = 18,
+# 1592 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_facets.h" 3
+_ZNSt10__num_base5_S_iEE = 24,
+# 1593 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_facets.h" 3
+_ZNSt10__num_base7_S_iendE = 26};
+# 1960 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_facets.h" 3
+struct _ZSt7num_getIcSt19istreambuf_iteratorIcSt11char_traitsIcEEE;
+# 2318 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_facets.h" 3
+struct _ZSt7num_putIcSt19ostreambuf_iteratorIcSt11char_traitsIcEEE;
+# 77 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/iosfwd" 3
+struct _ZSt9basic_iosIcSt11char_traitsIcEE;
+# 86 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/iosfwd" 3
+struct _ZSo;
+# 650 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/stl_uninitialized.h" 3
+struct _ZSt27__uninitialized_default_n_1ILb1EE;
+# 56 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/new_allocator.h" 3
+struct _ZSt15__new_allocatorIfE;
+# 124 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/allocator.h" 3
+struct _ZSaIfE;
+# 90 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/alloc_traits.h" 3
+struct _ZSt16allocator_traitsISaIfEE;
+# 92 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/stl_vector.h" 3
+struct _ZNSt12_Vector_baseIfSaIfEE17_Vector_impl_dataE;
+# 133 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/stl_vector.h" 3
+struct _ZNSt12_Vector_baseIfSaIfEE12_Vector_implE;
+# 85 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/stl_vector.h" 3
+struct _ZSt12_Vector_baseIfSaIfEE;
+# 423 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/stl_vector.h" 3
+struct _ZSt6vectorIfSaIfEE;
+# 177 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/stl_iterator_base_types.h" 3
+struct _ZSt15iterator_traitsIPfE;
+# 89 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/cpp_type_traits.h" 3
+enum _ZNSt9__traitorISt12__is_integerIfESt13__is_floatingIfEEUt_E {
+# 89 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/cpp_type_traits.h" 3
+_ZNSt9__traitorISt12__is_integerIfESt13__is_floatingIfEE7__valueE = 1};
+# 339 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/cpp_type_traits.h" 3
+struct _ZSt15__is_arithmeticIfE;
+# 324 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/cpp_type_traits.h" 3
+enum _ZNSt12__is_pointerIfEUt_E {
+# 324 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/cpp_type_traits.h" 3
+_ZNSt12__is_pointerIfE7__valueE};
+# 322 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/cpp_type_traits.h" 3
+struct _ZSt12__is_pointerIfE;
+# 89 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/cpp_type_traits.h" 3
+enum _ZNSt9__traitorISt15__is_arithmeticIfESt12__is_pointerIfEEUt_E {
+# 89 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/cpp_type_traits.h" 3
+_ZNSt9__traitorISt15__is_arithmeticIfESt12__is_pointerIfEE7__valueE = 1};
+# 87 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/cpp_type_traits.h" 3
+struct _ZSt9__traitorISt15__is_arithmeticIfESt12__is_pointerIfEE;
+# 98 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/char_traits.h" 3
+struct _ZN9__gnu_cxx11char_traitsIcEE;
+# 119 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/ext/alloc_traits.h" 3
+struct _ZN9__gnu_cxx14__alloc_traitsISaIfEfE6rebindIfEE;
+# 48 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/ext/alloc_traits.h" 3
+struct _ZN9__gnu_cxx14__alloc_traitsISaIfEfEE;
+# 1043 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/stl_iterator.h" 3
+struct _ZN9__gnu_cxx17__normal_iteratorIPfSt6vectorIfSaIfEEEE;
+# 1043 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/stl_iterator.h" 3
+struct _ZN9__gnu_cxx17__normal_iteratorIPKfSt6vectorIfSaIfEEEE;
+# 57 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/ext/numeric_traits.h" 3
+enum _ZN9__gnu_cxx22__is_integer_nonstrictIlEUt_E {
+# 57 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/ext/numeric_traits.h" 3
+_ZN9__gnu_cxx22__is_integer_nonstrictIlE7__widthE = 64};
+# 45 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/ext/type_traits.h" 3
+struct _ZN9__gnu_cxx11__enable_ifILb1EvEE;
+# 214 "/home/hgx/miniforge3/envs/sundaresan/lib/gcc/x86_64-conda-linux-gnu/12.2.0/include/stddef.h" 3
+typedef unsigned long size_t;
+#include "crt/device_runtime.h"
+# 39 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/sysroot/usr/include/xlocale.h" 3
+typedef struct __locale_struct *__locale_t;
+# 32 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/x86_64-conda-linux-gnu/bits/atomic_word.h" 3
+typedef int _Atomic_word;
+# 213 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/stl_iterator_base_types.h" 3
+typedef float _ZNSt15iterator_traitsIPfE10value_typeE;
+# 298 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/x86_64-conda-linux-gnu/bits/c++config.h" 3
+typedef unsigned long _ZSt6size_t;
+# 299 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/x86_64-conda-linux-gnu/bits/c++config.h" 3
+typedef long _ZSt9ptrdiff_t;
+# 302 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/x86_64-conda-linux-gnu/bits/c++config.h" 3
+typedef void *_ZSt9nullptr_t;
+# 73 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/cpp_type_traits.h" 3
+struct _ZSt11__true_type {};
+# 74 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/cpp_type_traits.h" 3
+struct _ZSt12__false_type {};
+# 82 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/type_traits" 3
+typedef struct _ZSt17integral_constantIbLb1EE _ZSt9true_type;
+# 85 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/type_traits" 3
+typedef struct _ZSt17integral_constantIbLb0EE _ZSt10false_type;
+# 62 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/type_traits" 3
+struct _ZSt17integral_constantIbLb0EE {};
+# 62 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/type_traits" 3
+struct _ZSt17integral_constantIbLb1EE {};
+# 93 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/stl_iterator_base_types.h" 3
+struct _ZSt18input_iterator_tag {};
+# 99 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/stl_iterator_base_types.h" 3
+struct _ZSt20forward_iterator_tag {};
+# 103 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/stl_iterator_base_types.h" 3
+struct _ZSt26bidirectional_iterator_tag {};
+# 107 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/stl_iterator_base_types.h" 3
+struct _ZSt26random_access_iterator_tag {};
+# 68 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/postypes.h" 3
+typedef _ZSt9ptrdiff_t _ZSt10streamsize;
+# 141 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/iosfwd" 3
+typedef struct _ZSo _ZSt7ostream;
+# 337 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/char_traits.h" 3
+typedef char _ZNSt11char_traitsIcE9char_typeE;
+# 335 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/char_traits.h" 3
+struct _ZSt11char_traitsIcE {};
+# 62 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/x86_64-conda-linux-gnu/bits/c++locale.h" 3
+typedef __locale_t _ZSt10__c_locale;
+# 168 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/stl_construct.h" 3
+struct _ZSt12_Destroy_auxILb1EE {};
+# 373 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_classes.h" 3
+struct _ZNSt6locale5facetE { const long *__vptr;
+# 379 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_classes.h" 3
+_Atomic_word _M_refcount;char __nv_no_debug_dummy_end_padding_0[4];};
+# 373 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_classes.h" 3
+struct __SO__NSt6locale5facetE { const long *__vptr;
+# 379 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_classes.h" 3
+_Atomic_word _M_refcount;};
+# 62 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_classes.h" 3
+struct _ZSt6locale {
+# 311 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_classes.h" 3
+struct _ZNSt6locale5_ImplE *_M_impl;};
+# 342 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+typedef enum _ZSt13_Ios_Fmtflags _ZNSt8ios_base8fmtflagsE;
+# 417 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+typedef enum _ZSt12_Ios_Iostate _ZNSt8ios_base7iostateE;
+# 488 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+typedef enum _ZSt12_Ios_Seekdir _ZNSt8ios_base7seekdirE;
+# 601 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+struct _ZNSt8ios_base6_WordsE {
+# 603 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+void *_M_pword;
+# 604 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+long _M_iword;};
+# 635 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+struct _ZNSt8ios_base4InitE {};
+# 229 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+struct _ZSt8ios_base { const long *__vptr;
+# 554 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZSt10streamsize _M_precision;
+# 555 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZSt10streamsize _M_width;
+# 556 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZNSt8ios_base8fmtflagsE _M_flags;
+# 557 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZNSt8ios_base7iostateE _M_exception;
+# 558 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+_ZNSt8ios_base7iostateE _M_streambuf_state;
+# 592 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+struct _ZNSt8ios_base14_Callback_listE *_M_callbacks;
+# 609 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+struct _ZNSt8ios_base6_WordsE _M_word_zero;
+# 614 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+struct _ZNSt8ios_base6_WordsE _M_local_word[8];
+# 617 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+int _M_word_size;
+# 618 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+struct _ZNSt8ios_base6_WordsE *_M_word;
+# 624 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/ios_base.h" 3
+struct _ZSt6locale _M_ios_locale;};
+# 131 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/streambuf" 3
+typedef char _ZNSt15basic_streambufIcSt11char_traitsIcEE9char_typeE;
+# 132 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/streambuf" 3
+typedef struct _ZSt11char_traitsIcE _ZNSt15basic_streambufIcSt11char_traitsIcEE11traits_typeE;
+# 80 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/iosfwd" 3
+struct _ZSt15basic_streambufIcSt11char_traitsIcEE { const long *__vptr;
+# 189 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/streambuf" 3
+_ZNSt15basic_streambufIcSt11char_traitsIcEE9char_typeE *_M_in_beg;
+# 190 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/streambuf" 3
+_ZNSt15basic_streambufIcSt11char_traitsIcEE9char_typeE *_M_in_cur;
+# 191 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/streambuf" 3
+_ZNSt15basic_streambufIcSt11char_traitsIcEE9char_typeE *_M_in_end;
+# 192 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/streambuf" 3
+_ZNSt15basic_streambufIcSt11char_traitsIcEE9char_typeE *_M_out_beg;
+# 193 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/streambuf" 3
+_ZNSt15basic_streambufIcSt11char_traitsIcEE9char_typeE *_M_out_cur;
+# 194 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/streambuf" 3
+_ZNSt15basic_streambufIcSt11char_traitsIcEE9char_typeE *_M_out_end;
+# 197 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/streambuf" 3
+struct _ZSt6locale _M_buf_locale;};
+# 44 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/x86_64-conda-linux-gnu/bits/ctype_base.h" 3
+typedef const int *_ZNSt10ctype_base9__to_typeE;
+# 48 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/x86_64-conda-linux-gnu/bits/ctype_base.h" 3
+typedef unsigned short _ZNSt10ctype_base4maskE;
+# 41 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/x86_64-conda-linux-gnu/bits/ctype_base.h" 3
+struct _ZSt10ctype_base {};
+# 694 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_facets.h" 3
+typedef char _ZNSt5ctypeIcE9char_typeE;
+# 689 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_facets.h" 3
+struct _ZSt5ctypeIcE {  const long *__b_NSt6locale5facetE___vptr;
+# 379 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_classes.h" 3
+_Atomic_word __b_NSt6locale5facetE__M_refcount;
+# 698 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_facets.h" 3
+_ZSt10__c_locale _M_c_locale_ctype;
+# 699 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_facets.h" 3
+__nv_bool _M_del;
+# 700 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_facets.h" 3
+_ZNSt10ctype_base9__to_typeE _M_toupper;
+# 701 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_facets.h" 3
+_ZNSt10ctype_base9__to_typeE _M_tolower;
+# 702 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_facets.h" 3
+const _ZNSt10ctype_base4maskE *_M_table;
+# 703 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_facets.h" 3
+char _M_widen_ok;
+# 704 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_facets.h" 3
+char _M_widen[256];
+# 705 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_facets.h" 3
+char _M_narrow[256];
+# 706 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/locale_facets.h" 3
+char _M_narrow_ok;char __nv_no_debug_dummy_end_padding_0[6];};
+# 76 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/basic_ios.h" 3
+typedef char _ZNSt9basic_iosIcSt11char_traitsIcEE9char_typeE;
+# 87 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/basic_ios.h" 3
+typedef struct _ZSt5ctypeIcE _ZNSt9basic_iosIcSt11char_traitsIcEE12__ctype_typeE;
+# 89 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/basic_ios.h" 3
+typedef struct _ZSt7num_putIcSt19ostreambuf_iteratorIcSt11char_traitsIcEEE _ZNSt9basic_iosIcSt11char_traitsIcEE14__num_put_typeE;
+# 91 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/basic_ios.h" 3
+typedef struct _ZSt7num_getIcSt19istreambuf_iteratorIcSt11char_traitsIcEEE _ZNSt9basic_iosIcSt11char_traitsIcEE14__num_get_typeE;
+# 77 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/iosfwd" 3
+struct _ZSt9basic_iosIcSt11char_traitsIcEE { struct _ZSt8ios_base __b_St8ios_base;
+# 96 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/basic_ios.h" 3
+struct _ZSo *_M_tie;
+# 97 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/basic_ios.h" 3
+_ZNSt9basic_iosIcSt11char_traitsIcEE9char_typeE _M_fill;
+# 98 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/basic_ios.h" 3
+__nv_bool _M_fill_init;
+# 99 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/basic_ios.h" 3
+struct _ZSt15basic_streambufIcSt11char_traitsIcEE *_M_streambuf;
+# 102 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/basic_ios.h" 3
+const _ZNSt9basic_iosIcSt11char_traitsIcEE12__ctype_typeE *_M_ctype;
+# 104 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/basic_ios.h" 3
+const _ZNSt9basic_iosIcSt11char_traitsIcEE14__num_put_typeE *_M_num_put;
+# 106 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/basic_ios.h" 3
+const _ZNSt9basic_iosIcSt11char_traitsIcEE14__num_get_typeE *_M_num_get;};
+# 62 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/ostream" 3
+typedef char _ZNSo9char_typeE;
+# 71 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/ostream" 3
+typedef struct _ZSo _ZNSo14__ostream_typeE;
+# 86 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/iosfwd" 3
+struct _ZSo { const long *__vptr; struct _ZSt9basic_iosIcSt11char_traitsIcEE __v_St9basic_iosIcSt11char_traitsIcEE;};
+# 650 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/stl_uninitialized.h" 3
+struct _ZSt27__uninitialized_default_n_1ILb1EE {};
+# 47 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/x86_64-conda-linux-gnu/bits/c++allocator.h" 3
+typedef struct _ZSt15__new_allocatorIfE _ZSt16__allocator_baseIfE;
+# 60 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/new_allocator.h" 3
+typedef _ZSt6size_t _ZNSt15__new_allocatorIfE9size_typeE;
+# 56 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/new_allocator.h" 3
+struct _ZSt15__new_allocatorIfE {};
+# 127 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/allocator.h" 3
+typedef float _ZNSaIfE10value_typeE;
+# 124 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/allocator.h" 3
+struct _ZSaIfE {};
+# 414 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/alloc_traits.h" 3
+typedef struct _ZSaIfE _ZNSt16allocator_traitsISaIfEE14allocator_typeE;
+# 417 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/alloc_traits.h" 3
+typedef float _ZNSt16allocator_traitsISaIfEE10value_typeE;
+# 420 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/alloc_traits.h" 3
+typedef float *_ZNSt16allocator_traitsISaIfEE7pointerE;
+# 423 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/alloc_traits.h" 3
+typedef const float *_ZNSt16allocator_traitsISaIfEE13const_pointerE;
+# 435 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/alloc_traits.h" 3
+typedef _ZSt6size_t _ZNSt16allocator_traitsISaIfEE9size_typeE;
+# 450 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/alloc_traits.h" 3
+typedef struct _ZSaIfE _ZNSt16allocator_traitsISaIfEE12rebind_allocIfEE;
+# 90 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/alloc_traits.h" 3
+struct _ZSt16allocator_traitsISaIfEE {};
+# 120 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/ext/alloc_traits.h" 3
+typedef _ZNSt16allocator_traitsISaIfEE12rebind_allocIfEE _ZN9__gnu_cxx14__alloc_traitsISaIfEfE6rebindIfE5otherE;
+# 88 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/stl_vector.h" 3
+typedef _ZN9__gnu_cxx14__alloc_traitsISaIfEfE6rebindIfE5otherE _ZNSt12_Vector_baseIfSaIfEE14_Tp_alloc_typeE;
+# 57 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/ext/alloc_traits.h" 3
+typedef _ZNSt16allocator_traitsISaIfEE7pointerE _ZN9__gnu_cxx14__alloc_traitsISaIfEfE7pointerE;
+# 90 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/stl_vector.h" 3
+typedef _ZN9__gnu_cxx14__alloc_traitsISaIfEfE7pointerE _ZNSt12_Vector_baseIfSaIfEE7pointerE;
+# 294 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/stl_vector.h" 3
+typedef struct _ZSaIfE _ZNSt12_Vector_baseIfSaIfEE14allocator_typeE;
+# 92 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/stl_vector.h" 3
+struct _ZNSt12_Vector_baseIfSaIfEE17_Vector_impl_dataE {
+# 94 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/stl_vector.h" 3
+_ZNSt12_Vector_baseIfSaIfEE7pointerE _M_start;
+# 95 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/stl_vector.h" 3
+_ZNSt12_Vector_baseIfSaIfEE7pointerE _M_finish;
+# 96 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/stl_vector.h" 3
+_ZNSt12_Vector_baseIfSaIfEE7pointerE _M_end_of_storage;};
+# 133 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/stl_vector.h" 3
+struct _ZNSt12_Vector_baseIfSaIfEE12_Vector_implE { struct _ZNSt12_Vector_baseIfSaIfEE17_Vector_impl_dataE __b_NSt12_Vector_baseIfSaIfEE17_Vector_impl_dataE;};
+# 85 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/stl_vector.h" 3
+struct _ZSt12_Vector_baseIfSaIfEE {
+# 371 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/stl_vector.h" 3
+struct _ZNSt12_Vector_baseIfSaIfEE12_Vector_implE _M_impl;};
+# 444 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/stl_vector.h" 3
+typedef _ZNSt12_Vector_baseIfSaIfEE14_Tp_alloc_typeE _ZNSt6vectorIfSaIfEE14_Tp_alloc_typeE;
+# 449 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/stl_vector.h" 3
+typedef _ZNSt12_Vector_baseIfSaIfEE7pointerE _ZNSt6vectorIfSaIfEE7pointerE;
+# 58 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/ext/alloc_traits.h" 3
+typedef _ZNSt16allocator_traitsISaIfEE13const_pointerE _ZN9__gnu_cxx14__alloc_traitsISaIfEfE13const_pointerE;
+# 450 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/stl_vector.h" 3
+typedef _ZN9__gnu_cxx14__alloc_traitsISaIfEfE13const_pointerE _ZNSt6vectorIfSaIfEE13const_pointerE;
+# 56 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/ext/alloc_traits.h" 3
+typedef _ZNSt16allocator_traitsISaIfEE10value_typeE _ZN9__gnu_cxx14__alloc_traitsISaIfEfE10value_typeE;
+# 62 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/ext/alloc_traits.h" 3
+typedef _ZN9__gnu_cxx14__alloc_traitsISaIfEfE10value_typeE *_ZN9__gnu_cxx14__alloc_traitsISaIfEfE9referenceE;
+# 451 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/stl_vector.h" 3
+typedef _ZN9__gnu_cxx14__alloc_traitsISaIfEfE9referenceE _ZNSt6vectorIfSaIfEE9referenceE;
+# 453 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/stl_vector.h" 3
+typedef struct _ZN9__gnu_cxx17__normal_iteratorIPfSt6vectorIfSaIfEEEE _ZNSt6vectorIfSaIfEE8iteratorE;
+# 455 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/stl_vector.h" 3
+typedef struct _ZN9__gnu_cxx17__normal_iteratorIPKfSt6vectorIfSaIfEEEE _ZNSt6vectorIfSaIfEE14const_iteratorE;
+# 458 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/stl_vector.h" 3
+typedef _ZSt6size_t _ZNSt6vectorIfSaIfEE9size_typeE;
+# 460 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/stl_vector.h" 3
+typedef struct _ZSaIfE _ZNSt6vectorIfSaIfEE14allocator_typeE;
+# 423 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/stl_vector.h" 3
+struct _ZSt6vectorIfSaIfEE { struct _ZSt12_Vector_baseIfSaIfEE __b_St12_Vector_baseIfSaIfEE;};
+# 212 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/stl_iterator_base_types.h" 3
+typedef struct _ZSt26random_access_iterator_tag _ZNSt15iterator_traitsIPfE17iterator_categoryE;
+# 177 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/stl_iterator_base_types.h" 3
+struct _ZSt15iterator_traitsIPfE {};
+# 87 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/cpp_type_traits.h" 3
+struct _ZSt9__traitorISt15__is_arithmeticIfESt12__is_pointerIfEE {};
+# 100 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/char_traits.h" 3
+typedef _ZNSt11char_traitsIcE9char_typeE _ZN9__gnu_cxx11char_traitsIcE9char_typeE;
+# 98 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/bits/char_traits.h" 3
+struct _ZN9__gnu_cxx11char_traitsIcEE {};
+# 119 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/ext/alloc_traits.h" 3
+struct _ZN9__gnu_cxx14__alloc_traitsISaIfEfE6rebindIfEE {};
+# 48 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/ext/alloc_traits.h" 3
+struct _ZN9__gnu_cxx14__alloc_traitsISaIfEfEE {};
+# 50 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/ext/type_traits.h" 3
+typedef void _ZN9__gnu_cxx11__enable_ifILb1EvE6__typeE;
+# 45 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/ext/type_traits.h" 3
+struct _ZN9__gnu_cxx11__enable_ifILb1EvEE {};
+# 267 "/usr/local/cuda-12.1/include/crt/common_functions.h"
+___device__(extern  __no_sc__) __attribute__((__externally_visible__)) __attribute__((visibility("default"))) void *_Znwm(_ZSt6size_t);
+# 130 "/usr/local/cuda-12.1/include/crt/common_functions.h"
+___device__(extern  __no_sc__) __attribute__((__externally_visible__)) __attribute__((__nothrow__)) __attribute__((visibility("default"))) void _ZdlPvm(void *, _ZSt6size_t);
+# 277 "/usr/local/cuda-12.1/include/crt/common_functions.h"
+___device__(extern  __no_sc__) __attribute__((__alloc_size__(1))) __attribute__((__externally_visible__)) __attribute__((__malloc__)) __attribute__((visibility("default"))) void *_ZnwmSt11align_val_t(_ZSt6size_t, unsigned long);
+# 281 "/usr/local/cuda-12.1/include/crt/common_functions.h"
+___device__(extern  __no_sc__) __attribute__((__externally_visible__)) __attribute__((__nothrow__)) __attribute__((visibility("default"))) void _ZdlPvmSt11align_val_t(void *, _ZSt6size_t, unsigned long);
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+# 109 "/usr/local/cuda-12.1/include/cuda_device_runtime_api.h"
+___device__(static  __no_sc__) __inline__ enum cudaError __cudaCDP2Malloc(void **, size_t);
+# 239 "/usr/local/cuda-12.1/include/cuda_device_runtime_api.h"
+___device__(extern  __no_sc__) enum cudaError __cudaCDP2GetLastError(void);
+# 241 "/usr/local/cuda-12.1/include/cuda_device_runtime_api.h"
+___device__(extern  __no_sc__) const char *__cudaCDP2GetErrorString(enum cudaError);
+# 250 "/usr/local/cuda-12.1/include/cuda_device_runtime_api.h"
+___device__(extern  __no_sc__) enum cudaError __cudaCDP2EventRecord(struct CUevent_st *, struct CUstream_st *);
+# 256 "/usr/local/cuda-12.1/include/cuda_device_runtime_api.h"
+___device__(extern  __no_sc__) enum cudaError __cudaCDP2Free(void *);
+# 378 "/usr/local/cuda-12.1/include/cuda_device_runtime_api.h"
+___device__(static  __no_sc__) __inline__ enum cudaError _ZN41_INTERNAL_e5569fb8_10_vec_add_cu_a98933e816cudaGetLastErrorEv(void);
+# 388 "/usr/local/cuda-12.1/include/cuda_device_runtime_api.h"
+___device__(static  __no_sc__) __inline__ const char *_ZN41_INTERNAL_e5569fb8_10_vec_add_cu_a98933e818cudaGetErrorStringE9cudaError(enum cudaError);
+# 433 "/usr/local/cuda-12.1/include/cuda_device_runtime_api.h"
+___device__(static  __no_sc__) __inline__ enum cudaError _ZN41_INTERNAL_e5569fb8_10_vec_add_cu_a98933e815cudaEventRecordEP10CUevent_stP11CUstream_st(struct CUevent_st *, struct CUstream_st *);
+# 463 "/usr/local/cuda-12.1/include/cuda_device_runtime_api.h"
+___device__(static  __no_sc__) __inline__ enum cudaError _ZN41_INTERNAL_e5569fb8_10_vec_add_cu_a98933e88cudaFreeEPv(void *);
+# 468 "/usr/local/cuda-12.1/include/cuda_device_runtime_api.h"
+___device__(static  __no_sc__) __inline__ enum cudaError _ZN41_INTERNAL_e5569fb8_10_vec_add_cu_a98933e810cudaMallocEPPvm(void **, size_t);
+# 174 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/new" 3
+___device__(static  __no_sc__) __inline__ __attribute__((__nothrow__)) __attribute__((visibility("default"))) void *_ZnwmPv(_ZSt6size_t, void *);
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+# 3634 "/usr/local/cuda-12.1/include/crt/device_functions.h"
+___device__(extern  __no_sc__) unsigned __cudaPushCallConfiguration(struct dim3, struct dim3, size_t, struct CUstream_st *);
+# 23 "vec_add.cu"
+__global__ __var_used__ extern void _Z9vectorAddPKfS0_Pfi(const float *, const float *, float *, int);
+# 423 "/usr/local/cuda-12.1/include/vector_types.h"
+___device__(static  __no_sc__) __inline__ void _ZN4dim3C1Ejjj(struct dim3 *const, unsigned, unsigned, unsigned);
+___device__(static  __no_sc__) __inline__ void _ZN4dim3C2Ejjj(struct dim3 *const, unsigned, unsigned, unsigned);
+# 241 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/cmath" 3
+___device__(static  __no_sc__) __inline__ __attribute__((visibility("default"))) float _ZSt4fabsf(float);
+#include "common_functions.h"
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+# 109 "/usr/local/cuda-12.1/include/cuda_device_runtime_api.h"
+___device__(static  __no_sc__) __inline__ enum cudaError __cudaCDP2Malloc(
+# 109 "/usr/local/cuda-12.1/include/cuda_device_runtime_api.h"
+void **p, 
+# 109 "/usr/local/cuda-12.1/include/cuda_device_runtime_api.h"
+size_t s){
+# 110 "/usr/local/cuda-12.1/include/cuda_device_runtime_api.h"
+{
+# 111 "/usr/local/cuda-12.1/include/cuda_device_runtime_api.h"
+return cudaErrorUnknown;
+# 112 "/usr/local/cuda-12.1/include/cuda_device_runtime_api.h"
+}}
+# 378 "/usr/local/cuda-12.1/include/cuda_device_runtime_api.h"
+___device__(static  __no_sc__) __inline__ enum cudaError _ZN41_INTERNAL_e5569fb8_10_vec_add_cu_a98933e816cudaGetLastErrorEv(void){
+# 379 "/usr/local/cuda-12.1/include/cuda_device_runtime_api.h"
+{
+# 380 "/usr/local/cuda-12.1/include/cuda_device_runtime_api.h"
+return __cudaCDP2GetLastError();
+# 381 "/usr/local/cuda-12.1/include/cuda_device_runtime_api.h"
+}}
+# 388 "/usr/local/cuda-12.1/include/cuda_device_runtime_api.h"
+___device__(static  __no_sc__) __inline__ const char *_ZN41_INTERNAL_e5569fb8_10_vec_add_cu_a98933e818cudaGetErrorStringE9cudaError(
+# 388 "/usr/local/cuda-12.1/include/cuda_device_runtime_api.h"
+enum cudaError error){
+# 389 "/usr/local/cuda-12.1/include/cuda_device_runtime_api.h"
+{
+# 390 "/usr/local/cuda-12.1/include/cuda_device_runtime_api.h"
+return __cudaCDP2GetErrorString(error);
+# 391 "/usr/local/cuda-12.1/include/cuda_device_runtime_api.h"
+}}
+# 433 "/usr/local/cuda-12.1/include/cuda_device_runtime_api.h"
+___device__(static  __no_sc__) __inline__ enum cudaError _ZN41_INTERNAL_e5569fb8_10_vec_add_cu_a98933e815cudaEventRecordEP10CUevent_stP11CUstream_st(
+# 433 "/usr/local/cuda-12.1/include/cuda_device_runtime_api.h"
+struct CUevent_st *event, 
+# 433 "/usr/local/cuda-12.1/include/cuda_device_runtime_api.h"
+struct CUstream_st *stream){
+# 434 "/usr/local/cuda-12.1/include/cuda_device_runtime_api.h"
+{  struct CUevent_st *__T0;
+ struct CUstream_st *__T1;
+# 435 "/usr/local/cuda-12.1/include/cuda_device_runtime_api.h"
+return ((__T0 = event) , (void)(__T1 = stream)) , (__cudaCDP2EventRecord(__T0, __T1));
+# 436 "/usr/local/cuda-12.1/include/cuda_device_runtime_api.h"
+}}
+# 463 "/usr/local/cuda-12.1/include/cuda_device_runtime_api.h"
+___device__(static  __no_sc__) __inline__ enum cudaError _ZN41_INTERNAL_e5569fb8_10_vec_add_cu_a98933e88cudaFreeEPv(
+# 463 "/usr/local/cuda-12.1/include/cuda_device_runtime_api.h"
+void *devPtr){
+# 464 "/usr/local/cuda-12.1/include/cuda_device_runtime_api.h"
+{
+# 465 "/usr/local/cuda-12.1/include/cuda_device_runtime_api.h"
+return __cudaCDP2Free(devPtr);
+# 466 "/usr/local/cuda-12.1/include/cuda_device_runtime_api.h"
+}}
+# 468 "/usr/local/cuda-12.1/include/cuda_device_runtime_api.h"
+___device__(static  __no_sc__) __inline__ enum cudaError _ZN41_INTERNAL_e5569fb8_10_vec_add_cu_a98933e810cudaMallocEPPvm(
+# 468 "/usr/local/cuda-12.1/include/cuda_device_runtime_api.h"
+void **devPtr, 
+# 468 "/usr/local/cuda-12.1/include/cuda_device_runtime_api.h"
+size_t size){
+# 469 "/usr/local/cuda-12.1/include/cuda_device_runtime_api.h"
+{  void **__T2;
+ size_t __T3;
+# 470 "/usr/local/cuda-12.1/include/cuda_device_runtime_api.h"
+return ((__T2 = devPtr) , (void)(__T3 = size)) , (__cudaCDP2Malloc(__T2, __T3));
+# 471 "/usr/local/cuda-12.1/include/cuda_device_runtime_api.h"
+}}
+# 174 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/new" 3
+___device__(static  __no_sc__) __inline__ __attribute__((__nothrow__)) __attribute__((visibility("default"))) void *_ZnwmPv( _ZSt6size_t __T4, 
+# 174 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/new" 3
+void *__p){
+# 175 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/new" 3
+{
+# 175 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/new" 3
+return __p;
+# 175 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/new" 3
+}}
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+# 23 "vec_add.cu"
+__global__ __var_used__ void _Z9vectorAddPKfS0_Pfi(
+# 23 "vec_add.cu"
+const float *A, 
+# 23 "vec_add.cu"
+const float *B, 
+# 23 "vec_add.cu"
+float *C, 
+# 23 "vec_add.cu"
+int numElements){
+# 23 "vec_add.cu"
+{
+# 24 "vec_add.cu"
+ size_t __cuda_local_var_59579_12_non_const_i;
+# 24 "vec_add.cu"
+__cuda_local_var_59579_12_non_const_i = ((size_t)(((blockDim.x) * (blockIdx.x)) + (threadIdx.x)));
+# 25 "vec_add.cu"
+if (__cuda_local_var_59579_12_non_const_i < ((unsigned long)numElements))
+# 25 "vec_add.cu"
+{
+# 26 "vec_add.cu"
+(C[__cuda_local_var_59579_12_non_const_i]) = ((A[__cuda_local_var_59579_12_non_const_i]) + (B[__cuda_local_var_59579_12_non_const_i]));
+# 27 "vec_add.cu"
+} 
+# 28 "vec_add.cu"
+}}
+__asm__(".align 2");
+# 423 "/usr/local/cuda-12.1/include/vector_types.h"
+___device__(static  __no_sc__) __inline__ void _ZN4dim3C1Ejjj( struct dim3 *const this, 
+# 423 "/usr/local/cuda-12.1/include/vector_types.h"
+unsigned vx, 
+# 423 "/usr/local/cuda-12.1/include/vector_types.h"
+unsigned vy, 
+# 423 "/usr/local/cuda-12.1/include/vector_types.h"
+unsigned vz){
+# 423 "/usr/local/cuda-12.1/include/vector_types.h"
+{
+# 423 "/usr/local/cuda-12.1/include/vector_types.h"
+(this->x) = vx;
+# 423 "/usr/local/cuda-12.1/include/vector_types.h"
+(this->y) = vy;
+# 423 "/usr/local/cuda-12.1/include/vector_types.h"
+(this->z) = vz; 
+# 423 "/usr/local/cuda-12.1/include/vector_types.h"
+}}
+__asm__(".align 2");
+___device__(static  __no_sc__) __inline__ void _ZN4dim3C2Ejjj( struct dim3 *const this,  unsigned __T5,  unsigned __T6,  unsigned __T7){ {  _ZN4dim3C1Ejjj(this, __T5, __T6, __T7);  }}
+# 241 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/cmath" 3
+___device__(static  __no_sc__) __inline__ __attribute__((visibility("default"))) float _ZSt4fabsf(
+# 241 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/cmath" 3
+float __x){
+# 242 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/cmath" 3
+{
+# 242 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/cmath" 3
+return fabsf(__x);
+# 242 "/home/hgx/miniforge3/envs/sundaresan/x86_64-conda-linux-gnu/include/c++/12.2.0/cmath" 3
+}}
