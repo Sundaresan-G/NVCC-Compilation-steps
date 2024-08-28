@@ -4,7 +4,7 @@ CUDA Toolkit 12.1
 
 Reference: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/#the-cuda-compilation-trajectory
 
-1. Using nvcc -dryrun option, it is realized that the compilation process is different than stated. Dryrun output is provided at the bottom.
+1. Using nvcc -dryrun option, output is provided at the bottom.
 2. Host compiler generates preprocesses file .cpp4.ii: 
 `gcc -D__CUDA_ARCH_LIST__=700 -D__NV_LEGACY_LAUNCH -E -x c++ -D__CUDACC__ -D__NVCC__  "-I/home/hgx/.triton/nvidia/bin/../include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=4 -D__CUDACC_VER_BUILD__=99 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=4 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -include "cuda_runtime.h" -m64 "vec_add.cu" -o "tmpxft_00004a81_00000000-5_vec_add.cpp4.ii" `.
 3. cudafe++ generates the stub file .cudafe1.stub.c, module ID file .module_id and further processes the previous .cpp4.ii input file to obtain .cudfe1.cpp file for host side.
@@ -23,8 +23,9 @@ Reference: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/#the-cuda-comp
 `nvlink -m64 --arch=sm_70 --register-link-binaries="tmpxft_00004a81_00000000-7_a_dlink.reg.c"    "-L/home/hgx/.triton/nvidia/bin/../lib/stubs" "-L/home/hgx/.triton/nvidia/bin/../lib" -cpu-arch=X86_64 "tmpxft_00004a81_00000000-11_vec_add.o"  -lcudadevrt  -o "tmpxft_00004a81_00000000-12_a_dlink.sm_70.cubin" --host-ccbin "gcc"`
 10. fatbinary embeds a_dlink.sm_70.cubin file to a_dlink.fatbin.c file.
 `fatbinary -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -link "--image3=kind=elf,sm=70,file=tmpxft_00004a81_00000000-12_a_dlink.sm_70.cubin" --embedded-fatbin="tmpxft_00004a81_00000000-8_a_dlink.fatbin.c" `
-11. Finally host compilers compile a_dlink.fatbin.c to a_dlink.o and then links cudart and cudadevrt statically (default behaviour) to get the final executable .out.
+11. Finally host compilers compile a_dlink.fatbin.c to a_dlink.o. 
 `gcc -D__CUDA_ARCH_LIST__=700 -D__NV_LEGACY_LAUNCH -c -x c++ -DFATBINFILE="\"tmpxft_00004a81_00000000-8_a_dlink.fatbin.c\"" -DREGISTERLINKBINARYFILE="\"tmpxft_00004a81_00000000-7_a_dlink.reg.c\"" -I. -D__NV_EXTRA_INITIALIZATION= -D__NV_EXTRA_FINALIZATION= -D__CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__  -Wno-psabi "-I/home/hgx/.triton/nvidia/bin/../include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=4 -D__CUDACC_VER_BUILD__=99 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=4 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -m64 "/home/hgx/.triton/nvidia/bin/crt/link.stub" -o "tmpxft_00004a81_00000000-13_a_dlink.o"`
+12. Then host compiler links cudart and cudadevrt statically (default behaviour) to get the final executable .out.
 `g++ -D__CUDA_ARCH_LIST__=700 -D__NV_LEGACY_LAUNCH -m64 -Wl,--start-group "tmpxft_00004a81_00000000-13_a_dlink.o" "tmpxft_00004a81_00000000-11_vec_add.o"   "-L/home/hgx/.triton/nvidia/bin/../lib/stubs" "-L/home/hgx/.triton/nvidia/bin/../lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out"`
 
 
