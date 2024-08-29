@@ -768,6 +768,8 @@ ___device__(static  __no_sc__) __inline__ __attribute__((__nothrow__)) __attribu
 ___device__(extern  __no_sc__) unsigned __cudaPushCallConfiguration(struct dim3, struct dim3, size_t, struct CUstream_st *);
 # 23 "vec_add.cu"
 __global__ __var_used__ extern void _Z9vectorAddPKfS0_Pfi(const float *, const float *, float *, int);
+# 31 "vec_add.cu"
+__global__ __var_used__ extern void _Z9addFloat4PK6float4S1_PS_m(const struct float4 *, const struct float4 *, struct float4 *, size_t);
 # 423 "/usr/local/cuda-12.1/include/vector_types.h"
 ___device__(static  __no_sc__) __inline__ void _ZN4dim3C1Ejjj(struct dim3 *const, unsigned, unsigned, unsigned);
 ___device__(static  __no_sc__) __inline__ void _ZN4dim3C2Ejjj(struct dim3 *const, unsigned, unsigned, unsigned);
@@ -1063,6 +1065,38 @@ if (__cuda_local_var_59579_12_non_const_i < ((unsigned long)numElements))
 # 27 "vec_add.cu"
 } 
 # 28 "vec_add.cu"
+}}
+# 31 "vec_add.cu"
+__global__ __var_used__ void _Z9addFloat4PK6float4S1_PS_m(
+# 31 "vec_add.cu"
+const struct float4 *a, 
+# 31 "vec_add.cu"
+const struct float4 *b, 
+# 31 "vec_add.cu"
+struct float4 *c, 
+# 31 "vec_add.cu"
+size_t n){
+# 31 "vec_add.cu"
+{
+# 32 "vec_add.cu"
+ size_t __cuda_local_var_59587_12_non_const_tid;
+# 32 "vec_add.cu"
+__cuda_local_var_59587_12_non_const_tid = ((size_t)((threadIdx.x) + ((blockIdx.x) * (blockDim.x))));
+# 33 "vec_add.cu"
+if (__cuda_local_var_59587_12_non_const_tid < n)
+# 33 "vec_add.cu"
+{
+# 34 "vec_add.cu"
+((c[__cuda_local_var_59587_12_non_const_tid]).x) = (((a[__cuda_local_var_59587_12_non_const_tid]).x) + ((b[__cuda_local_var_59587_12_non_const_tid]).x));
+# 35 "vec_add.cu"
+((c[__cuda_local_var_59587_12_non_const_tid]).y) = (((a[__cuda_local_var_59587_12_non_const_tid]).y) + ((b[__cuda_local_var_59587_12_non_const_tid]).y));
+# 36 "vec_add.cu"
+((c[__cuda_local_var_59587_12_non_const_tid]).z) = (((a[__cuda_local_var_59587_12_non_const_tid]).z) + ((b[__cuda_local_var_59587_12_non_const_tid]).z));
+# 37 "vec_add.cu"
+((c[__cuda_local_var_59587_12_non_const_tid]).w) = (((a[__cuda_local_var_59587_12_non_const_tid]).w) + ((b[__cuda_local_var_59587_12_non_const_tid]).w));
+# 38 "vec_add.cu"
+} 
+# 39 "vec_add.cu"
 }}
 __asm__(".align 2");
 # 423 "/usr/local/cuda-12.1/include/vector_types.h"

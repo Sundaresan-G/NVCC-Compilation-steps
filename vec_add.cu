@@ -27,6 +27,17 @@ __global__ void vectorAdd(const float *A, const float *B, float *C, int numEleme
     }
 }
 
+// Kernel for element-wise addition of float4 vectors
+__global__ void addFloat4(const float4* a, const float4* b, float4* c, size_t n) {
+    size_t tid = threadIdx.x + blockIdx.x * blockDim.x;
+    if (tid < n) {
+        c[tid].x = a[tid].x + b[tid].x;
+        c[tid].y = a[tid].y + b[tid].y;
+        c[tid].z = a[tid].z + b[tid].z;
+        c[tid].w = a[tid].w + b[tid].w;
+    }
+}
+
 int main(void) {
     // Size of vectors
     size_t numElements = 1024 * 1024 * 128;

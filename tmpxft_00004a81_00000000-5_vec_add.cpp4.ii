@@ -57411,6 +57411,17 @@ __attribute__((global)) void vectorAdd(const float *A, const float *B, float *C,
     }
 }
 
+
+__attribute__((global)) void addFloat4(const float4* a, const float4* b, float4* c, size_t n) {
+    size_t tid = threadIdx.x + blockIdx.x * blockDim.x;
+    if (tid < n) {
+        c[tid].x = a[tid].x + b[tid].x;
+        c[tid].y = a[tid].y + b[tid].y;
+        c[tid].z = a[tid].z + b[tid].z;
+        c[tid].w = a[tid].w + b[tid].w;
+    }
+}
+
 int main(void) {
 
     size_t numElements = 1024 * 1024 * 128;
@@ -57424,14 +57435,14 @@ int main(void) {
 
     for (int i = 0; i < numElements; ++i) {
         h_A[i] = rand() / (float)
-# 42 "vec_add.cu" 3 4
+# 53 "vec_add.cu" 3 4
                                 2147483647
-# 42 "vec_add.cu"
+# 53 "vec_add.cu"
                                         ;
         h_B[i] = rand() / (float)
-# 43 "vec_add.cu" 3 4
+# 54 "vec_add.cu" 3 4
                                 2147483647
-# 43 "vec_add.cu"
+# 54 "vec_add.cu"
                                         ;
     }
 
@@ -57457,9 +57468,9 @@ int main(void) {
 
 
     cudaEvent_t start, stop;
-    { const cudaError_t error = cudaEventCreate(&start); if (error != cudaSuccess) { std::cerr << "Error: " << "vec_add.cu" << ":" << 68 << ", " << "code: " << error << ", reason: " << cudaGetErrorString(error) << std::endl; exit(1); } };
-    { const cudaError_t error = cudaEventCreate(&stop); if (error != cudaSuccess) { std::cerr << "Error: " << "vec_add.cu" << ":" << 69 << ", " << "code: " << error << ", reason: " << cudaGetErrorString(error) << std::endl; exit(1); } };
-    { const cudaError_t error = cudaEventRecord(start, 0); if (error != cudaSuccess) { std::cerr << "Error: " << "vec_add.cu" << ":" << 70 << ", " << "code: " << error << ", reason: " << cudaGetErrorString(error) << std::endl; exit(1); } };
+    { const cudaError_t error = cudaEventCreate(&start); if (error != cudaSuccess) { std::cerr << "Error: " << "vec_add.cu" << ":" << 79 << ", " << "code: " << error << ", reason: " << cudaGetErrorString(error) << std::endl; exit(1); } };
+    { const cudaError_t error = cudaEventCreate(&stop); if (error != cudaSuccess) { std::cerr << "Error: " << "vec_add.cu" << ":" << 80 << ", " << "code: " << error << ", reason: " << cudaGetErrorString(error) << std::endl; exit(1); } };
+    { const cudaError_t error = cudaEventRecord(start, 0); if (error != cudaSuccess) { std::cerr << "Error: " << "vec_add.cu" << ":" << 81 << ", " << "code: " << error << ", reason: " << cudaGetErrorString(error) << std::endl; exit(1); } };
 
     vectorAdd<<<blocksPerGrid, threadsPerBlock>>>(d_A, d_B, d_C, numElements);
 
@@ -57468,19 +57479,19 @@ int main(void) {
     if (err != cudaSuccess) {
         std::cerr << "Failed to launch vectorAdd kernel (error code " << cudaGetErrorString(err) << ")!\n";
         exit(
-# 78 "vec_add.cu" 3 4
+# 89 "vec_add.cu" 3 4
             1
-# 78 "vec_add.cu"
+# 89 "vec_add.cu"
                         );
     }
 
 
-    { const cudaError_t error = cudaEventRecord(stop, 0); if (error != cudaSuccess) { std::cerr << "Error: " << "vec_add.cu" << ":" << 82 << ", " << "code: " << error << ", reason: " << cudaGetErrorString(error) << std::endl; exit(1); } };
-    { const cudaError_t error = cudaEventSynchronize(stop); if (error != cudaSuccess) { std::cerr << "Error: " << "vec_add.cu" << ":" << 83 << ", " << "code: " << error << ", reason: " << cudaGetErrorString(error) << std::endl; exit(1); } };
+    { const cudaError_t error = cudaEventRecord(stop, 0); if (error != cudaSuccess) { std::cerr << "Error: " << "vec_add.cu" << ":" << 93 << ", " << "code: " << error << ", reason: " << cudaGetErrorString(error) << std::endl; exit(1); } };
+    { const cudaError_t error = cudaEventSynchronize(stop); if (error != cudaSuccess) { std::cerr << "Error: " << "vec_add.cu" << ":" << 94 << ", " << "code: " << error << ", reason: " << cudaGetErrorString(error) << std::endl; exit(1); } };
 
 
     float elapsedTime;
-    { const cudaError_t error = cudaEventElapsedTime(&elapsedTime, start, stop); if (error != cudaSuccess) { std::cerr << "Error: " << "vec_add.cu" << ":" << 87 << ", " << "code: " << error << ", reason: " << cudaGetErrorString(error) << std::endl; exit(1); } };
+    { const cudaError_t error = cudaEventElapsedTime(&elapsedTime, start, stop); if (error != cudaSuccess) { std::cerr << "Error: " << "vec_add.cu" << ":" << 98 << ", " << "code: " << error << ", reason: " << cudaGetErrorString(error) << std::endl; exit(1); } };
 
     std::cout << "Total device time elapsed: "<<elapsedTime <<"ms \n";
 
@@ -57492,9 +57503,9 @@ int main(void) {
         if (fabs(h_A[i] + h_B[i] - h_C[i]) > 1e-5) {
             std::cerr << "Result verification failed at element " << i << "!\n";
             exit(
-# 98 "vec_add.cu" 3 4
+# 109 "vec_add.cu" 3 4
                 1
-# 98 "vec_add.cu"
+# 109 "vec_add.cu"
                             );
         }
     }

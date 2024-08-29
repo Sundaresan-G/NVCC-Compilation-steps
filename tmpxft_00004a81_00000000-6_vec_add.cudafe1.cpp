@@ -60210,105 +60210,127 @@ if (i < numElements) {
 # 28
 } 
 #endif
-# 30 "vec_add.cu"
-int main() { 
+# 31 "vec_add.cu"
+void addFloat4(const float4 *a, const float4 *b, float4 *c, size_t n) ;
+#if 0
+# 31
+{ 
 # 32
-size_t numElements = ((1024 * 1024) * 128); 
+size_t tid = (__device_builtin_variable_threadIdx.x) + ((__device_builtin_variable_blockIdx.x) * (__device_builtin_variable_blockDim.x)); 
 # 33
-size_t size = numElements * sizeof(float); 
+if (tid < n) { 
+# 34
+((c[tid]).x) = (((a[tid]).x) + ((b[tid]).x)); 
+# 35
+((c[tid]).y) = (((a[tid]).y) + ((b[tid]).y)); 
 # 36
-std::vector< float>  h_A(numElements); 
+((c[tid]).z) = (((a[tid]).z) + ((b[tid]).z)); 
 # 37
-std::vector< float>  h_B(numElements); 
+((c[tid]).w) = (((a[tid]).w) + ((b[tid]).w)); 
 # 38
-std::vector< float>  h_C(numElements); 
-# 41
-for (int i = 0; i < numElements; ++i) { 
-# 42
-h_A[i] = ((rand()) / ((float)2147483647)); 
-# 43 "vec_add.cu"
-h_B[i] = ((rand()) / ((float)2147483647)); 
-# 44 "vec_add.cu"
 }  
+# 39
+} 
+#endif
+# 41 "vec_add.cu"
+int main() { 
+# 43
+size_t numElements = ((1024 * 1024) * 128); 
+# 44
+size_t size = numElements * sizeof(float); 
 # 47
-float *d_A = (nullptr); 
+std::vector< float>  h_A(numElements); 
 # 48
-float *d_B = (nullptr); 
+std::vector< float>  h_B(numElements); 
 # 49
-float *d_C = (nullptr); 
+std::vector< float>  h_C(numElements); 
 # 52
-cudaMalloc((void **)(&d_A), size); 
-# 53
-cudaMalloc((void **)(&d_B), size); 
-# 54
-cudaMalloc((void **)(&d_C), size); 
-# 57
-cudaMemcpy(d_A, h_A.data(), size, cudaMemcpyHostToDevice); 
-# 58
-cudaMemcpy(d_B, h_B.data(), size, cudaMemcpyHostToDevice); 
-# 61
-int threadsPerBlock = 256; 
-# 62
-int blocksPerGrid = ((numElements + threadsPerBlock) - (1)) / threadsPerBlock; 
-# 64
-(__cudaPushCallConfiguration(blocksPerGrid, threadsPerBlock)) ? (void)0 : vectorAdd(d_A, d_B, d_C, numElements); 
-# 67
-cudaEvent_t start, stop; 
-# 68
-{ const cudaError_t error = cudaEventCreate(&start); if (error != (cudaSuccess)) { (((((((((((((((((((std::cerr << ("Error: "))) << ("vec_add.cu"))) << (":"))) << (68))) << (", "))) << ("code: "))) << error)) << (", reason: "))) << (cudaGetErrorString(error)))) << (std::endl)); exit(1); }  } ; 
-# 69
-{ const cudaError_t error = cudaEventCreate(&stop); if (error != (cudaSuccess)) { (((((((((((((((((((std::cerr << ("Error: "))) << ("vec_add.cu"))) << (":"))) << (69))) << (", "))) << ("code: "))) << error)) << (", reason: "))) << (cudaGetErrorString(error)))) << (std::endl)); exit(1); }  } ; 
-# 70
-{ const cudaError_t error = cudaEventRecord(start, 0); if (error != (cudaSuccess)) { (((((((((((((((((((std::cerr << ("Error: "))) << ("vec_add.cu"))) << (":"))) << (70))) << (", "))) << ("code: "))) << error)) << (", reason: "))) << (cudaGetErrorString(error)))) << (std::endl)); exit(1); }  } ; 
-# 72
-(__cudaPushCallConfiguration(blocksPerGrid, threadsPerBlock)) ? (void)0 : vectorAdd(d_A, d_B, d_C, numElements); 
-# 75
-cudaError_t err = cudaGetLastError(); 
-# 76
-if (err != (cudaSuccess)) { 
-# 77
-(((((std::cerr << ("Failed to launch vectorAdd kernel (error code "))) << (cudaGetErrorString(err)))) << (")!\n")); 
-# 78
-exit(1); 
-# 79 "vec_add.cu"
-}  
-# 82
-{ const cudaError_t error = cudaEventRecord(stop, 0); if (error != (cudaSuccess)) { (((((((((((((((((((std::cerr << ("Error: "))) << ("vec_add.cu"))) << (":"))) << (82))) << (", "))) << ("code: "))) << error)) << (", reason: "))) << (cudaGetErrorString(error)))) << (std::endl)); exit(1); }  } ; 
-# 83
-{ const cudaError_t error = cudaEventSynchronize(stop); if (error != (cudaSuccess)) { (((((((((((((((((((std::cerr << ("Error: "))) << ("vec_add.cu"))) << (":"))) << (83))) << (", "))) << ("code: "))) << error)) << (", reason: "))) << (cudaGetErrorString(error)))) << (std::endl)); exit(1); }  } ; 
-# 86
-float elapsedTime; 
-# 87
-{ const cudaError_t error = cudaEventElapsedTime(&elapsedTime, start, stop); if (error != (cudaSuccess)) { (((((((((((((((((((std::cerr << ("Error: "))) << ("vec_add.cu"))) << (":"))) << (87))) << (", "))) << ("code: "))) << error)) << (", reason: "))) << (cudaGetErrorString(error)))) << (std::endl)); exit(1); }  } ; 
-# 89
-(((((std::cout << ("Total device time elapsed: "))) << elapsedTime)) << ("ms \n")); 
-# 92
-cudaMemcpy(h_C.data(), d_C, size, cudaMemcpyDeviceToHost); 
-# 95
 for (int i = 0; i < numElements; ++i) { 
-# 96
-if ((fabs((h_A[i] + h_B[i]) - h_C[i])) > (1.0E-5)) { 
-# 97
-(((((std::cerr << ("Result verification failed at element "))) << i)) << ("!\n")); 
-# 98
+# 53
+h_A[i] = ((rand()) / ((float)2147483647)); 
+# 54 "vec_add.cu"
+h_B[i] = ((rand()) / ((float)2147483647)); 
+# 55 "vec_add.cu"
+}  
+# 58
+float *d_A = (nullptr); 
+# 59
+float *d_B = (nullptr); 
+# 60
+float *d_C = (nullptr); 
+# 63
+cudaMalloc((void **)(&d_A), size); 
+# 64
+cudaMalloc((void **)(&d_B), size); 
+# 65
+cudaMalloc((void **)(&d_C), size); 
+# 68
+cudaMemcpy(d_A, h_A.data(), size, cudaMemcpyHostToDevice); 
+# 69
+cudaMemcpy(d_B, h_B.data(), size, cudaMemcpyHostToDevice); 
+# 72
+int threadsPerBlock = 256; 
+# 73
+int blocksPerGrid = ((numElements + threadsPerBlock) - (1)) / threadsPerBlock; 
+# 75
+(__cudaPushCallConfiguration(blocksPerGrid, threadsPerBlock)) ? (void)0 : vectorAdd(d_A, d_B, d_C, numElements); 
+# 78
+cudaEvent_t start, stop; 
+# 79
+{ const cudaError_t error = cudaEventCreate(&start); if (error != (cudaSuccess)) { (((((((((((((((((((std::cerr << ("Error: "))) << ("vec_add.cu"))) << (":"))) << (79))) << (", "))) << ("code: "))) << error)) << (", reason: "))) << (cudaGetErrorString(error)))) << (std::endl)); exit(1); }  } ; 
+# 80
+{ const cudaError_t error = cudaEventCreate(&stop); if (error != (cudaSuccess)) { (((((((((((((((((((std::cerr << ("Error: "))) << ("vec_add.cu"))) << (":"))) << (80))) << (", "))) << ("code: "))) << error)) << (", reason: "))) << (cudaGetErrorString(error)))) << (std::endl)); exit(1); }  } ; 
+# 81
+{ const cudaError_t error = cudaEventRecord(start, 0); if (error != (cudaSuccess)) { (((((((((((((((((((std::cerr << ("Error: "))) << ("vec_add.cu"))) << (":"))) << (81))) << (", "))) << ("code: "))) << error)) << (", reason: "))) << (cudaGetErrorString(error)))) << (std::endl)); exit(1); }  } ; 
+# 83
+(__cudaPushCallConfiguration(blocksPerGrid, threadsPerBlock)) ? (void)0 : vectorAdd(d_A, d_B, d_C, numElements); 
+# 86
+cudaError_t err = cudaGetLastError(); 
+# 87
+if (err != (cudaSuccess)) { 
+# 88
+(((((std::cerr << ("Failed to launch vectorAdd kernel (error code "))) << (cudaGetErrorString(err)))) << (")!\n")); 
+# 89
 exit(1); 
-# 99 "vec_add.cu"
+# 90 "vec_add.cu"
 }  
+# 93
+{ const cudaError_t error = cudaEventRecord(stop, 0); if (error != (cudaSuccess)) { (((((((((((((((((((std::cerr << ("Error: "))) << ("vec_add.cu"))) << (":"))) << (93))) << (", "))) << ("code: "))) << error)) << (", reason: "))) << (cudaGetErrorString(error)))) << (std::endl)); exit(1); }  } ; 
+# 94
+{ const cudaError_t error = cudaEventSynchronize(stop); if (error != (cudaSuccess)) { (((((((((((((((((((std::cerr << ("Error: "))) << ("vec_add.cu"))) << (":"))) << (94))) << (", "))) << ("code: "))) << error)) << (", reason: "))) << (cudaGetErrorString(error)))) << (std::endl)); exit(1); }  } ; 
+# 97
+float elapsedTime; 
+# 98
+{ const cudaError_t error = cudaEventElapsedTime(&elapsedTime, start, stop); if (error != (cudaSuccess)) { (((((((((((((((((((std::cerr << ("Error: "))) << ("vec_add.cu"))) << (":"))) << (98))) << (", "))) << ("code: "))) << error)) << (", reason: "))) << (cudaGetErrorString(error)))) << (std::endl)); exit(1); }  } ; 
 # 100
-}  
-# 102
-(std::cout << ("Test PASSED\n")); 
-# 105
-cudaFree(d_A); 
+(((((std::cout << ("Total device time elapsed: "))) << elapsedTime)) << ("ms \n")); 
+# 103
+cudaMemcpy(h_C.data(), d_C, size, cudaMemcpyDeviceToHost); 
 # 106
-cudaFree(d_B); 
+for (int i = 0; i < numElements; ++i) { 
 # 107
-cudaFree(d_C); 
+if ((fabs((h_A[i] + h_B[i]) - h_C[i])) > (1.0E-5)) { 
+# 108
+(((((std::cerr << ("Result verification failed at element "))) << i)) << ("!\n")); 
 # 109
-(std::cout << ("Done\n")); 
-# 110
-return 0; 
+exit(1); 
+# 110 "vec_add.cu"
+}  
 # 111
+}  
+# 113
+(std::cout << ("Test PASSED\n")); 
+# 116
+cudaFree(d_A); 
+# 117
+cudaFree(d_B); 
+# 118
+cudaFree(d_C); 
+# 120
+(std::cout << ("Done\n")); 
+# 121
+return 0; 
+# 122
 } 
 
 # 1 "tmpxft_00004a81_00000000-6_vec_add.cudafe1.stub.c"
